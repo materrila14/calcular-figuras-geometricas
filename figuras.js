@@ -42,7 +42,7 @@ function calcularPerimetroCuadrado() {
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    alert("El perímetro del cuadrado es " + perimetro);
 }
 
 function calcularAreaCuadrado() {
@@ -50,25 +50,54 @@ function calcularAreaCuadrado() {
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+    alert("El área del cuadrado es " + area);
 }
 
 // Triángulo
 function calcularPerimetroTriangulo() {
-    const input1 = document.getElementById("inputTriangulo1");
-    const input2 = document.getElementById("inputTriangulo2");
-    const input3 = document.getElementById("inputTriangulo3");
-    const value1 = parseInt(input1.value);
-    const value2 = parseInt(input2.value);
-    const value3 = parseInt(input3.value);
+    const inputLado1 = document.getElementById("inputTriLado1");
+    const inputLado2 = document.getElementById("inputTriLado2");
+    const inputBase = document.getElementById("inputTriBase");
+    const lado1 = parseInt(inputLado1.value);
+    const lado2 = parseInt(inputLado2.value);
+    const base = parseInt(inputBase.value);
 
-    const perimetro = perimetroTriangulo(value1, value2, value3);
-    alert(perimetro);
+    const perimetro = perimetroTriangulo(lado1, lado2, base);
+    alert("El perímetro del triángulo es " + perimetro);
 }
 
 function calcularAreaTriangulo() {
-    const input = document.getElementById("inputTuadrado");
-    const value = input.value;
+    const inputBase = document.getElementById("inputTriBase");
+    const inputAltura = document.getElementById("inputTriAltura");
+    const base = parseInt(inputBase.value);
+    const altura = parseInt(inputAltura.value);
+
+    const area = areaTriangulo(base, altura);
+    alert("El área del triángulo es " + area);
 }
 
 // Círculo
+function obtenerRadio() {
+    const inputCirculo = document.getElementById("inputCirculo");
+    const radio = parseInt(inputCirculo.value);
+
+    return radio
+}
+
+function calcularDiametroCirculo() {
+    radio = obtenerRadio()
+    const diametro = diametroCirculo(radio)
+    alert("El diámetro del círculo es " + diametro)
+}
+
+function calcularPerimetroCirculo() {
+    radio = obtenerRadio()
+    const perimetro = perimetroCirculo(radio)
+    alert("El perímetro del círculo es " + perimetro)
+}
+
+function calcularAreaCirculo() {
+    radio = obtenerRadio()
+    const area = areaCirculo(radio)
+    alert("El perímetro del círculo es " + area)
+}
