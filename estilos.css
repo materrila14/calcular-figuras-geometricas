@@ -1,7 +1,9 @@
 body {
     background-image: url("https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    background-size: contain;
+    background-size: 100vw 110vh;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serifs;
+    font-size: 20px;
     color: white;
 }
 
@@ -17,10 +19,10 @@ header h1, p {
 .container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
     align-self: center;
     background-color: black;
 }
@@ -33,6 +35,7 @@ header h1, p {
 .container__figura form input {
     width: 200px;
     align-self: center;
+    margin: 10px auto;
 }
 
 .container__figura form button {
