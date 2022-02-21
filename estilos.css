@@ -1,0 +1,49 @@
+body {
+    background-image: url("https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serifs;
+    color: white;
+}
+
+header {
+    background-color: lightgray;
+    color: black;
+}
+
+header h1, p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    align-self: center;
+    background-color: black;
+}
+
+.container__figura form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__figura form input {
+    width: 200px;
+    align-self: center;
+}
+
+.container__figura form button {
+    width: 180px;
+    align-self: center;
+    margin: 5px;
+    height: 25px;
+    background-color: rgb(10, 228, 39);
+    color: white;
+}
+
+p, label {
+    font-size: 15px;
+}
